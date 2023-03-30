@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Globalstyle />
       <Routes>
-        <Route exact path="/" element={<Main/>}/>
+        <Route path="/" element={<Main/>}/>
         <Route path="/CreateMemo" element={<CreateMemo />}/>
       </Routes>
     </>
