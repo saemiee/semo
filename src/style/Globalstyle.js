@@ -10,6 +10,16 @@ const Globalstyle = createGlobalStyle`
   body {
     background: #FFFFFF;
   }
+
+  button {
+    cursor: pointer;
+    
+    width: 152px;
+    height: 56px;
+
+    box-shadow: 0px 8px 20px 0px #113A02;
+    background: #829679;
+  }
 `
 
 export default Globalstyle;

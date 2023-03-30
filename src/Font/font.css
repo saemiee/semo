@@ -1,0 +1,20 @@
+@font-face{
+  font-family: "Pretendard-Regular";
+  src: url('./Pretendard-Regular.otf');
+  
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: "Pretendard-Medium";
+  src: url('./Pretendard-Medium.otf');
+  
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: "Pretendard-SaemiBold";
+  src: url('./Pretendard-SemiBold.otf');
+  
+  font-weight: 600;
+}

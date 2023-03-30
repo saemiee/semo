@@ -1,12 +1,17 @@
 import React from 'react';
 import Globalstyle from './style/Globalstyle';
-import RouterApp from './Router';
+import { Route, Routes } from 'react-router-dom';
+import Main from './pages/Main';
+import CreateMemo from './pages/CreateMemo';
 
 const App = () => {
   return (
     <>
       <Globalstyle />
-      <RouterApp />
+      <Routes>
+        <Route exact path="/" element={<Main/>}/>
+        <Route path="/CreateMemo" element={<CreateMemo />}/>
+      </Routes>
     </>
     
   );
