@@ -1,5 +1,5 @@
 import React from 'react';
-import { MemoCard } from '../../component/memoCard/MemoCard.jsx';
+import { MemoCard } from '../../component';
 
 const Main = () => {
   return (

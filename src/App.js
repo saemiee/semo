@@ -1,8 +1,7 @@
 import React from 'react';
 import Globalstyle from './style/Globalstyle';
 import { Route, Routes } from 'react-router-dom';
-import Main from './pages/Main';
-import CreateMemo from './pages/CreateMemo';
+import { CreateMemo, Main } from './pages';
 
 const App = () => {
   return (
