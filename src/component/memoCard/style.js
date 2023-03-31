@@ -6,6 +6,8 @@ export const MemoCard = styled.div`
 
   background: #F0F3EF;
   box-shadow: 0px 8px 20px 0px #CCD4CE;
+  margin-right: 47px;
+  margin-bottom: 40px;
 `;
 
 export const Title = styled.div`

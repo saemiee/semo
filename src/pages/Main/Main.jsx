@@ -6,8 +6,17 @@ const Main = () => {
   return (
     <>
       <SemoHeader></SemoHeader>
-      {/* <MemoCard>하이</MemoCard> */}
-      <S.Content />
+      <S.Content>
+        <S.MemoContent>
+          <MemoCard></MemoCard>
+          <MemoCard></MemoCard>
+          <MemoCard></MemoCard>
+          <MemoCard></MemoCard>
+          <MemoCard></MemoCard>
+          <MemoCard></MemoCard>
+        </S.MemoContent>
+      
+      </S.Content>
     </>
   )
 }

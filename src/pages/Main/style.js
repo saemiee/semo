@@ -8,4 +8,16 @@ export const Content = styled.div`
 
   width: 1920px;
   height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
+
+export const MemoContent = styled.div`
+  width: 1360px;
+  height: 560px;
+
+  display: flex;
+  flex-wrap: wrap;
+`
+
