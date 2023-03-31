@@ -1,12 +1,13 @@
 import React from 'react';
-import { MemoCard } from '../../component';
+import { MemoCard, SemoHeader } from '../../component';
 
 const Main = () => {
   return (
     <>
-      <MemoCard>하이</MemoCard>
+      <SemoHeader></SemoHeader>
+      {/* <MemoCard>하이</MemoCard> */}
     </>
   )
 }
 
-export default Main;
+export default Main; 

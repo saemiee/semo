@@ -9,6 +9,7 @@ const Globalstyle = createGlobalStyle`
 
   body {
     background: #FFFFFF;
+    overflow: hidden;
   }
 
   button {
@@ -19,6 +20,28 @@ const Globalstyle = createGlobalStyle`
 
     box-shadow: 0px 8px 20px 0px #113A02;
     background: #829679;
+  }
+
+  @font-face{
+    font-family: "Pretendard-Regular";
+    src: url('./Pretendard-Regular.otf');
+  
+    font-weight: 400;
+  }
+
+  @font-face{
+    font-family: "Pretendard-Medium";
+    src: local('Pretendard-Medium'), format('otf');
+    
+    font-weight: 500;
+    font-style: normal
+  }
+
+  @font-face{
+    font-family: "Pretendard-SaemiBold";
+    src: url('./Pretendard-SemiBold.otf');
+    
+    font-weight: 600;
   }
 `
 
