@@ -9,7 +9,6 @@ const Globalstyle = createGlobalStyle`
 
   body {
     background: #FFFFFF;
-    overflow: hidden;
   }
 
   button {

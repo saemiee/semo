@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { semo } from '../../assets/index.js'
 
 export const header = styled.header`
-  width: 1820px;
+  width: 1920px;
   height: 100px;
 
   background: #FFFFFF;
