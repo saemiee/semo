@@ -15,6 +15,7 @@ const Main = () => {
           <MemoCard></MemoCard>
           <MemoCard></MemoCard>
         </S.MemoContent>
+        <S.AddMemoButton>Add Memo</S.AddMemoButton>
       
       </S.Content>
     </>
