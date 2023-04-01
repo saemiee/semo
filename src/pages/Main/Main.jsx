@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MemoCard, SemoHeader } from '../../component';
 import * as S from './style'
 
@@ -7,15 +8,17 @@ const Main = () => {
     <>
       <SemoHeader></SemoHeader>
       <S.Content>
-        <S.MemoContent>
+        <S.MainContents>
           <MemoCard></MemoCard>
           <MemoCard></MemoCard>
           <MemoCard></MemoCard>
           <MemoCard></MemoCard>
           <MemoCard></MemoCard>
           <MemoCard></MemoCard>
-        </S.MemoContent>
-        <S.AddMemoButton>Add Memo</S.AddMemoButton>
+        </S.MainContents>
+        <Link to="/CreateMemo" style={{ textDecoration: "none" }}>
+          <S.AddMemoButton>Add Memo</S.AddMemoButton>
+        </Link>
       
       </S.Content>
     </>

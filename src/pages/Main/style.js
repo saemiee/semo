@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { MainContent } from '../../assets/index';
+import { MainBackground } from '../../assets/index';
 
 export const Content = styled.div`
-  background: url(${MainContent});
+  background: url(${MainBackground});
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -13,12 +13,15 @@ export const Content = styled.div`
   align-items: center;
 `
 
-export const MemoContent = styled.div`
-  width: 1360px;
+export const MainContents = styled.div`
+  width: 1306px;
   height: 560px;
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 160px;
+
 `
 
 export const AddMemoButton = styled.div`
@@ -32,10 +35,11 @@ export const AddMemoButton = styled.div`
   background: #829679;
   color: #FFFFFF;
   font-size: 20px;
+  font-weight: 500;
 
   position: relative;
   top: 356px;
-  left: -200px;
+  left: -156px;
   
   display: flex;
   justify-content: center;
