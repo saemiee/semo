@@ -9,9 +9,23 @@ export const CreateContent = styled.div`
   width: 1920px;
   height: 1080px;
   display: flex;
+  padding-left: 560px;
+  padding-right: 560px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 `
+
+export const btns = styled.div`
+  width: 320px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+
+  align-self: flex-end;
+`
+
 export const Cencel = styled.button`
   width: 152px;
   height: 56px;

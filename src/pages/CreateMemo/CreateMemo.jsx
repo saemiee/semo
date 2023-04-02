@@ -9,10 +9,12 @@ const CreateMemo = () => {
       <SemoHeader></SemoHeader>
       <S.CreateContent>
         <Write></Write>
-        <CreateButton></CreateButton>
-        <Link to="/">
-          <S.Cencel>Cencel</S.Cencel>
-        </Link>
+        <S.btns>
+          <CreateButton></CreateButton>
+          <Link to="/">
+            <S.Cencel>Cencel</S.Cencel>
+          </Link>
+        </S.btns>
       </S.CreateContent>
     </>
   )

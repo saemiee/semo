@@ -19,7 +19,6 @@ const Main = () => {
         <Link to="/CreateMemo" style={{ textDecoration: "none" }}>
           <S.AddMemoButton>Add Memo</S.AddMemoButton>
         </Link>
-      
       </S.Content>
     </>
   )

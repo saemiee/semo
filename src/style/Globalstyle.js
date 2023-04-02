@@ -12,7 +12,7 @@ const Globalstyle = createGlobalStyle`
   }
 
   body {
-    background: #FFFFFF;
+    background: pink;
   }
 
 

@@ -11,6 +11,8 @@ export const NotePad = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 `
 
 
