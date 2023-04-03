@@ -1,6 +1,5 @@
 import React from 'react';
-import { SemoHeader, CreateButton, Write } from '../../component';
-import { Link } from 'react-router-dom';
+import { SemoHeader, Write } from '../../component';
 import * as S from './style';
 
 const CreateMemo = () => {
@@ -9,12 +8,6 @@ const CreateMemo = () => {
       <SemoHeader></SemoHeader>
       <S.CreateContent>
         <Write></Write>
-        <S.btns>
-          <CreateButton></CreateButton>
-          <Link to="/">
-            <S.Cencel>Cencel</S.Cencel>
-          </Link>
-        </S.btns>
       </S.CreateContent>
     </>
   )

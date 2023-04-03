@@ -22,6 +22,7 @@ export const InputTitle = styled.input`
 
   font-size: 30px;
   font-weight: 600;
+  
   border: none;
   border-bottom: 1px solid #AAACAA;
   background: transparent;
@@ -34,8 +35,10 @@ export const InputTitle = styled.input`
 export const InputMemo = styled.textarea`
   width: 680px;
   height: 548px;
+
   font-size: 26px;
   font-weight: 500;
+
   border: none;
   background: transparent;
   resize: none;
@@ -44,4 +47,46 @@ export const InputMemo = styled.textarea`
   &:focus {
     outline: none;
   }
+`
+
+export const Buttons = styled.div`
+  width: 320px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+
+  align-self: flex-end;
+`
+
+export const CreateButton = styled.button`
+  width: 152px;
+  height: 56px;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  box-shadow: 0px 8px 20px 0px #D3DBD1;
+  background: #829679;
+  color: #FFFFFF;
+  border: none;
+
+  font-size: 24px;
+  font-weight: 500;
+  
+`
+
+export const CencelButton = styled.button`
+  width: 152px;
+  height: 56px;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  box-shadow: 0px 8px 20px 0px #D3DBD1;
+  background: #829679;
+  color: #FFFFFF;
+  border: none;
+
+  font-size: 24px;
+  font-weight: 500;
 `

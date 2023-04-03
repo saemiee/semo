@@ -1,6 +1,6 @@
 import MemoCard from './MemoCard/MemoCard';
 import SemoHeader from './SemoHeader/SemoHeader'
-import CreateButton from './CreateButton/CreateButton';
+import Button from './Button/Button';
 import Write from './Write/Write'
 
-export { MemoCard, SemoHeader, CreateButton, Write  };
+export { MemoCard, SemoHeader, Button, Write  };
