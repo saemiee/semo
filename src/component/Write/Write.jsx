@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as S from './style';
 
@@ -10,7 +10,7 @@ const Write = () => {
 
   const { Title, Content } = inputs;
 
-  const ChangeMemo = (e) => {
+  const onChange = (e) => {
     const { name, value } = e.target;
     setInputs({
       ...inputs,
@@ -18,34 +18,36 @@ const Write = () => {
     });
   };
 
-  const [Memo, setMemo] = useState([]);
-  const key = useRef(1);
-
-  const CreateMemo = (e) => {
-    const NewMemo = {
-      id: key.current,
-      Title,
-      Content
-    };
-    setMemo([...Memo, NewMemo]);
-
+  const onCencel = () => {
     setInputs({
-      Tilte: '',
+      Title: '',
       Content: ''
     })
-    key.current = key.current + 1;
-
   }
+
+  
   return (
     <>
       <S.NotePad>
-        <S.InputTitle name="title" type="text" placeholder="Please enter the title." value={Title}></S.InputTitle>
-        <S.InputMemo name="content" type="text" placeholder="Please enter contnet." value={Content} ></S.InputMemo>
+        <S.InputTitle 
+          name="title" 
+          type="text" 
+          placeholder="Please enter the title." 
+          value={Title}
+          onChange={onChange}
+        ></S.InputTitle>
+        <S.InputMemo 
+          name="content" 
+          type="text" 
+          placeholder="Please enter contnet." 
+          value={Content}
+          onChange={onChange}
+        ></S.InputMemo>
       </S.NotePad>
       <S.Buttons>
         <S.CreateButton>Create</S.CreateButton>
         <Link to="/">
-          <S.CencelButton>Cencel</S.CencelButton>
+          <S.CencelButton onClick={onCencel}>Cencel</S.CencelButton>
         </Link>
       </S.Buttons>
     </>
