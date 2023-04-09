@@ -17,10 +17,13 @@ const Write = () => {
   const [notes, setNotes] = useState([]);
 
   const CreateMemo = () => {
-    const newMemo = {
-      
-    };
-    setNotes([...notes, newMemo]);
+    const MemoArray = JSON.parse(localStorage.getItem('NewMemo')) || [];
+    MemoArray.push({Title, Content});
+    localStorage.setItem('NewMemo', JSON.stringify(MemoArray))
+
+
+    setTitle('');
+    setContent('');
   }
     
   const onCencel = () => {
@@ -38,14 +41,16 @@ const Write = () => {
           placeholder="Please enter the title." 
           value={Title}
           onChange={TitleChange}
-        ></S.InputTitle>
+        >
+        </S.InputTitle>
         <S.InputMemo 
           name="content" 
           type="text" 
           placeholder="Please enter contnet." 
           value={Content}
           onChange={ContentChange}
-        ></S.InputMemo>
+        >
+        </S.InputMemo>
       </S.NotePad>
       <S.Buttons>
         <Link to="/">
